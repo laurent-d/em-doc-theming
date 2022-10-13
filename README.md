@@ -131,3 +131,25 @@ Pull in the latest changes into your repository:
 git fetch upstream
 git pull upstream master
 ```
+
+### 7️⃣ Summary command for npm
+
+Start the reload process
+```
+npm run start -- -e EVENT-ID -t TOKEN -n THEME_NAME -s true
+```
+
+Create a theme
+```
+npm run create-theme -- -n NEW_THEME_NAME -b BASE_THEME
+```
+
+Validate a theme
+```
+npm run validate -- -n THEME_NAME
+```
+
+Release a theme (need at minimum one commit on git, not push required) 
+```
+npm run release -- -n THEME_NAME -t TOKEN
+```
